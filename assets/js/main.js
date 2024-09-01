@@ -226,8 +226,8 @@
 })();
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Get the current page URL
-  var currentPage = window.location.pathname.split("/").pop();
+  // Get the current page URL path
+  var currentPage = window.location.pathname;
 
   // Get all navigation links
   var navLinks = document.querySelectorAll('#navmenu ul li a');
@@ -236,11 +236,19 @@ document.addEventListener('DOMContentLoaded', function () {
     // Get the href attribute of the link
     var href = link.getAttribute('href');
 
-    // If the href matches the current page, add the 'active' class
-    if (href.includes(currentPage)) {
+    // Check for homepage
+    if (currentPage === '/' || currentPage === '/index.html') {
+      if (href === '/' || href.includes('index.html')) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    } else if (href.includes(currentPage)) {
+      // For other pages, check if the href matches the current page path
       link.classList.add('active');
     } else {
       link.classList.remove('active');
     }
   });
 });
+
