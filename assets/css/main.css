@@ -968,6 +968,8 @@ section,
   z-index: 1;
 }
 
+
+
 .hero .carousel-item::before {
   content: "";
   /* background-color: color-mix(in srgb, var(--background-color), transparent 30%); */
@@ -1095,7 +1097,7 @@ section,
 }
 #title-heading {
   /* background-image: url('/assets/img/bg/6.png'); */
-  background-color: #012C71;
+  background-color: #3f0241;
   background-size: cover; /* Ensures the image covers the entire section */
   background-position: center;
   background-repeat: no-repeat;
