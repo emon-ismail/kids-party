@@ -371,21 +371,83 @@ color: #f9f9f9;
 }
 
 .logo-kids{
-  width: 110px;
+  width: 190px;
+  height: auto;
 }
 
 
 @media (max-width: 768px) {
   .logo-kids {
-      width: 100px; /* Adjust width for tablets and small devices */
+      width: 110px; /* Adjust width for tablets and small devices */
   }
 }
 
 @media (max-width: 576px) {
   .logo-kids {
-      width: 80px; /* Adjust width for very small devices */
+      width: 110px; /* Adjust width for very small devices */
   }
 }
+
+/* Adjust the image size */
+.title-img {
+  width: 90px; /* Set the desired width */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Optional: Make corners rounded */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .title-img {
+    width: 60px; /* Smaller image size for narrow screens */
+  }
+}
+
+
+
+
+
+/* Image */
+.title-img {
+  width: 100px; /* Adjust size for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .title-container {
+    flex-direction: column; /* Stack text and image vertically on smaller screens */
+    text-align: center;
+  }
+
+  #title-heading {
+    font-size: 1.5rem; /* Reduce text size */
+  }
+
+  .title-img {
+    width: 60px; /* Reduce image size */
+  }
+}
+
+
+
+
+
+/* Ensure the video fills the full height */
+video {
+  object-fit: cover; /* Ensures the video fills the area while maintaining aspect ratio */
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  video {
+    height: auto; /* Adjust for smaller screens */
+  }
+}
+
+
+
+
 
 
 /* Navmenu - Mobile */
@@ -767,7 +829,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 70vh;
+  min-height: 80vh;
   position: relative;
   padding: 0;
   display: flex;
@@ -973,8 +1035,8 @@ section,
 /* frederick section */
 
 .frederick {
-  background-color: var(--heading-color);
-  color: white;
+  /* background-color: var(--heading-color); */
+  color: rgb(255, 255, 255);
   font-size: 65px;
   font-weight: 400;
 }
@@ -993,11 +1055,29 @@ section,
   }
 }
 
+
+
+.decorative-icon img {
+
+  display: inline-block;
+
+}
+.menu-img {
+  width: 100%;
+  aspect-ratio: 3/6;
+  object-fit: contain;
+ 
+}
+
+
+
+
+
 /* frederick section */
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-#about {
+#about , #menu {
   background-image: url('/assets/img/bg/1.jpg');
   background-size: cover; /* Ensures the image covers the entire section */
   background-position: center;
@@ -1005,8 +1085,17 @@ section,
   background-attachment: fixed;
   color: #292828; /* Text color */
 }
+ #menu {
+  background-image: url('/assets/img/bg/6.jpg');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #292828; /* Text color */
+}
 #title-heading {
-  background-image: url('/assets/img/bg/7.png');
+  /* background-image: url('/assets/img/bg/6.png'); */
+  background-color: #012C71;
   background-size: cover; /* Ensures the image covers the entire section */
   background-position: center;
   background-repeat: no-repeat;
@@ -1015,6 +1104,27 @@ section,
   text-transform: uppercase;
   
 }
+/* Custom close button style */
+.btn-close {
+  background-color: #ff5c8d; /* Colorful background */
+  border-radius: 50%; /* Round the button */
+  padding: 8px; /* Add padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect */
+.btn-close:hover {
+  background-color: #ff4081; /* Darker pink on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Focus effect (optional for accessibility) */
+.btn-close:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(255, 92, 141, 0.5); /* Glowing effect on focus */
+}
+
 
 #title-heading{
 

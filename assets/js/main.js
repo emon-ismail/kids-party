@@ -252,3 +252,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+function setModalImage(imageSrc) {
+  const modalImage = document.getElementById('modalImage');
+  modalImage.src = imageSrc; // Set the source of the image inside the modal
+}
+
