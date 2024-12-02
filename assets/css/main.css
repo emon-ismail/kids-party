@@ -305,12 +305,20 @@ color: #f9f9f9;
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: var(--accent-color);
     background-color:  var(--nav-hover-bg-color);
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%); /* Creates the pointed shape */
   }
+   .active{
+    color: var(--background-color);
+  }
+  .location{
+    color: #ffffff;
+  }
+  .location:hover{
+    color: #000000;
+  }
 
-  
   
 
   .navmenu .dropdown ul {
