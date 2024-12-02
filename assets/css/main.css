@@ -116,6 +116,7 @@ hr {
 }
 .event-book-button:hover{
   color: var(--nav-hover-bg-color);
+  background-color: var(--nav-dropdown-hover-color)!important;
 }
 
 
