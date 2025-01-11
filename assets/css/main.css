@@ -116,6 +116,7 @@ hr {
 }
 .event-book-button:hover{
   color: var(--nav-hover-bg-color);
+  background-color: var(--nav-dropdown-hover-color)!important;
 }
 
 
@@ -279,7 +280,7 @@ color: #f9f9f9;
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    padding: 18px 15px;
+    padding: 18px 9px;
     font-size: 19px;
     font-family: var(--nav-font);
     font-weight: 400;
@@ -305,12 +306,20 @@ color: #f9f9f9;
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: var(--accent-color);
     background-color:  var(--nav-hover-bg-color);
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%); /* Creates the pointed shape */
   }
+   .active{
+    color: var(--background-color);
+  }
+  .location{
+    color: #ffffff;
+  }
+  .location:hover{
+    color: #000000;
+  }
 
-  
   
 
   .navmenu .dropdown ul {
